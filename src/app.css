@@ -1,0 +1,65 @@
+:root {
+  --paper: #ece8e0;
+  --paper-2: #f6f3ed;
+  --ink: #1f2024;
+  --ink-2: #5b5d63;
+  --line: #d3cdc1;
+  --accent: #2f5d50;
+
+  --dev-bg: #14161a;
+  --dev-1: #1b1e24;
+  --dev-2: #232730;
+  --dev-edge: #31363f;
+  --dev-text: #ece8df;
+  --dev-muted: #8d929c;
+
+  --good: #7fc29b;
+  --warn: #f0b35a;
+  --alert: #e8806a;
+  --heat: #f08a5d;
+  --cool: #6fb1e0;
+  --idle: #5a606b;
+
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --sans: 'Avenir Next', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+body {
+  min-width: 1320px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+[role='slider']:focus-visible {
+  outline: 2px solid var(--warn);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
