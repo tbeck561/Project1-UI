@@ -17,7 +17,7 @@ This project is a mock-up of the interface for a **smart chair**, built with Sve
 - **Device UI** (center): what the chair itself shows. It is an armrest touch screen with a vertical slider beside it. 
 - **Testing UI** (right side): controls that pretend to be the person in the chair. You can sit down or stand up, change posture, speed up time, run a whole 9 AM to 5 PM workday, or switch between four pretend users. The left side shows a visual of what the person is doing in the simulation
 
-![The full app with nobody seated](docs/img/01-full-standby.jpg)
+![The full app with nobody seated](img/01-full-standby.jpg)
 
 *The whole app with nobody in the chair. Device UI is the middle portion center, Testing UI on the right and left*
 
@@ -65,15 +65,15 @@ I made 10 sketches for each of my design questions and then picked the ideas tha
 
 *Challenge 1: how to show posture feedback without being naggy. Ideas included the backrest adjusting by itself, an app that tells the user, and a color change when posture is poor.*
 
-![Sketches for control placement](docs/img/sketch-controls.jpg)
+![Sketches for control placement](img/sketch-controls.jpg)
 
 *Challenge 2: where physical controls go on a chair with no flat surface, such as the armrest tip and the front of the seat.*
 
-![Sketches for showing the chair is active](docs/img/sketch-active.jpg)
+![Sketches for showing the chair is active](img/sketch-active.jpg)
 
 *Challenge 3: how to show the chair is actively sensing. Ideas were a light over the head, a sound, and a light under the chair.*
 
-![Vanilla UI sketch with six tiles and a slider](docs/img/sketch-vanilla.jpg)
+![Vanilla UI sketch with six tiles and a slider](img/sketch-vanilla.jpg)
 
 *The vanilla UI sketch: a grid of six tiles on the left and one vertical slider on the right.*
 
@@ -87,7 +87,7 @@ The vanilla sketch became the final interface almost directly: six tiles and one
 
 The home screen has six tiles. The top row shows live information and opens a screen when tapped. The bottom row controls the slider. When nobody is seated the panel is in standby and the session timer shows dashes.
 
-![Home screen with the six tiles while seated](docs/img/02-home-seated.jpg)
+![Home screen with the six tiles while seated](img/02-home-seated.jpg)
 
 *The home screen while seated. Top row: Session, Posture and Insights. Bottom row: Seat climate, Recline and Lumbar.*
 
@@ -100,7 +100,7 @@ The home screen has six tiles. The top row shows live information and opens a sc
 | Vertical slider and its three small buttons | Drag to set the chosen setting. The slider can also be used with the arrow keys. The label above it shows the current value, such as "Warm 1" or "107°". |
 | Time and timer pill (top right) | Shows the time of day and the running session time. It changes color when posture is poor or a break is due. |
 
-![Slider set to recline](docs/img/08-slider-recline.jpg)
+![Slider set to recline](img/08-slider-recline.jpg)
 
 *Choosing the Recline tile points the slider at recline. The label above the slider now reads "Recline 107°".*
 
@@ -108,23 +108,23 @@ The home screen has six tiles. The top row shows live information and opens a sc
 
 This screen has the big session timer, a bar that fills up toward the next break, three small statistics (seated today, breaks, longest stretch), a stepper for how often to be reminded to take a break, and the auto adjust controls.
 
-![Session screen](docs/img/03-session.jpg)
+![Session screen](img/03-session.jpg)
 
 *The session screen with auto adjust turned off.*
 
 **Auto adjust** is a switch with a stepper for how many minutes after sitting down it should happen. When it is on, the chair counts the time you have been seated. When it reaches the number you chose, the chair eases the recline, lumbar and seat heat to the settings that are best for that user and also brings you to an upright posture. This happens once for each sitting session. The line under the switch always says what is happening, such as "Adjusts in 1m" or "Adjusted this session".
 
-![Auto adjust switched on with a one minute delay](docs/img/04-session-auto-on.jpg)
+![Auto adjust switched on with a one minute delay](img/04-session-auto-on.jpg)
 
 *Auto adjust is on and set to one minute. It also lists this user's optimal settings.*
 
-![Chair adjusted banner with an undo button](docs/img/07-auto-done.jpg)
+![Chair adjusted banner with an undo button](img/07-auto-done.jpg)
 
 *When the chair has adjusted, a banner says so and offers **Undo**. While it is moving the banner offers **Stop**.*
 
 The person is always in control. Touching any control while the chair is moving stops the adjustment, **Stop** ends it where it is, and **Undo** puts the settings and posture back to how they were.
 
-![Posture screen with the chair adjusted banner](docs/img/06-auto-moving.jpg)
+![Posture screen with the chair adjusted banner](img/06-auto-moving.jpg)
 
 *The chair after auto adjust fired while the person was slouching. The posture is now Upright and the banner says so.*
 
@@ -132,11 +132,11 @@ The person is always in control. Touching any control while the chair is moving 
 
 The chair gives feedback in two different ways, so that it is not annoying.
 
-![Quiet posture note after slouching for a while](docs/img/09-nudge.jpg)
+![Quiet posture note after slouching for a while](img/09-nudge.jpg)
 
 ***Posture nudge.** Slouching for about four minutes brings up one quiet message. It then stays quiet for 20 minutes, so it never nags.*
 
-![Break alert banner with a snooze button](docs/img/10-break-alert.jpg)
+![Break alert banner with a snooze button](img/10-break-alert.jpg)
 
 ***Break alert.** After the chosen sitting time (45 minutes by default) an amber banner says "Time to move" with a Snooze button.*
 
@@ -144,11 +144,11 @@ The chair gives feedback in two different ways, so that it is not annoying.
 
 The seat and backrest sensors are recorded here on the touch panel. The screen has a card showing the current posture, how long it has been held, and the percent of today spent upright, plus two views.
 
-![Live view while slouching](docs/img/05-posture-live-slouch.jpg)
+![Live view while slouching](img/05-posture-live-slouch.jpg)
 
 ***Live.** The backrest strip shows which spots touch your back, and the seat grid shows where your weight is, with the left/right split.*
 
-![History view with heat maps and timeline](docs/img/13-posture-history.jpg)
+![History view with heat maps and timeline](img/13-posture-history.jpg)
 
 ***History.** Heat maps of the backrest and seat for the day, a sentence about where your weight has been, a posture timeline, and a log of recent movement.*
 
@@ -158,14 +158,14 @@ The heat maps add up how long each spot has been pressed, so brighter or redder 
 
 The insights screen has a ring for today's goal, the last seven days as bars with a dashed goal line, and a bar showing how today was split between postures. The Testing UI can load four pretend users, who each have their own goal, history, settings and optimal settings. Loading a different user changes everything the interface shows.
 
-![Insights screen for Alex](docs/img/11-insights.jpg)
+![Insights screen for Alex](img/11-insights.jpg)
 
 *Insights for the week.*
 
 
 ### The Testing UI
 
-![Testing panel](docs/img/15-testing-panel.jpg)
+![Testing panel](img/15-testing-panel.jpg)
 
 | Control | What it does |
 |---|---|
@@ -176,7 +176,7 @@ The insights screen has a ring for today's goal, the last seven days as bars wit
 | Load a user | Switches between Alex, Maya, Sam and Jordan |
 | Where the UI lives | A small drawing showing that everything is on the armrest touch panel |
 
-![The workday simulation running](docs/img/12-workday-running.jpg)
+![The workday simulation running](img/12-workday-running.jpg)
 
 *The workday simulation running. The history builds up as the day goes on.*
 
