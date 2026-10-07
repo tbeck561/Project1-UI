@@ -61,7 +61,7 @@ I asked an interviewee (Soubir) five questions about how long he sits, whether r
 
 I made 10 sketches for each of my design questions and then picked the ideas that worked best.
 
-![Sketches for posture feedback](docs/img/sketch-posture.jpg)
+![Sketches for posture feedback](img/sketch-posture.jpg)
 
 *Challenge 1: how to show posture feedback without being naggy. Ideas included the backrest adjusting by itself, an app that tells the user, and a color change when posture is poor.*
 
